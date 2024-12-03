@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        html, body {
+            height: 100%; /* Enable full height for the body */
+        }
+    </style>
+    <title><!DOCTYPE html>
+        <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+        <title>Add Student</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Add your CSS -->
+</head>
+<body>
+<h1>Edit Student</h1>
+<form th:action="@{/newStudent}" method="post" class="container mt-5 p-4 border rounded shadow-sm bg-light">
+    <h2 class="mb-4 text-center text-primary">Add New Student</h2>
+    <div class="mb-3">
+        <label for="id" class="form-label">ID:</label>
+        <input type="text" id="id" name="id"  class="form-control border-primary" required>
+    </div>
+    <div class="mb-3">
+        <label for="firstName" class="form-label">First Name:</label>
+        <input type="text" id="firstName" name="firstName"  class="form-control border-primary" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" class="form-control border-primary" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="level" class="form-label">Level:</label>
+        <input type="text" id="level" name="level" class="form-control border-primary" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="gpa" class="form-label">GPA:</label>
+        <input type="number" id="gpa" name="gpa" step="0.01" class="form-control border-primary" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="address" class="form-label">Address:</label>
+        <input type="text" id="address" name="address" class="form-control border-primary" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="gender" class="form-label">Gender:</label>
+        <select id="gender" name="gender" class="form-select border-primary">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <div class="mt-4 text-center">
+        <button type="submit" class="btn btn-success btn-lg">Add</button>
+    </div>
+</form>
+
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
